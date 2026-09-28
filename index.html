@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Jaymate — Your Mac fleet manager</title>
+  <meta name="description" content="Meet Jaymate, a native macOS app for Mac inventory, update diagnostics, Recovery Lock, and failed MDM commands with Jamf Pro. A free project by Philippe Scholl.">
+  <meta property="og:title" content="Jaymate — Your Mac fleet manager">
+  <meta property="og:description" content="A little clarity for your Mac fleet. Native tools for inventory, diagnostics, and everyday admin work with Jamf Pro.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#8587ff">
+  <link rel="icon" href="jaymate-icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main navigation">
+    <a class="brand" href="#" aria-label="Jaymate home"><img src="jaymate-icon.png" width="34" height="34" alt="">Jaymate</a>
+    <div class="nav-links"><a href="#features">Features</a><a href="#get-started">Availability</a><a class="github-nav" href="https://github.com/phillscholl/jaymate-website">GitHub <span aria-hidden="true">↗</span></a></div>
+    <button class="theme-button" id="theme-toggle" type="button" aria-label="Use dark appearance" hidden><span aria-hidden="true">◐</span></button>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> MADE FOR MAC ADMINS</p>
+    <h1 id="hero-title">Your Mac fleet.<br><span>In good company.</span></h1>
+    <p class="hero-description">Meet Jaymate. Your native Mac fleet manager for inventory,<br class="desktop-break"> diagnostics, and everyday admin work with Jamf Pro.</p>
+    <div class="hero-actions"><a class="button primary" href="https://github.com/phillscholl/jaymate-website">Follow the project <span aria-hidden="true">↗</span></a><a class="button secondary" href="#get-started">Availability <span aria-hidden="true">↓</span></a></div>
+    <p class="hero-meta">Free project <span>·</span> macOS 15+ <span>·</span> English &amp; German</p>
+    <figure class="product-figure">
+      <div class="app-window" aria-label="Illustrative Jaymate Devices view with fictional sample data">
+        <aside class="app-sidebar">
+          <div class="traffic-lights" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="sidebar-brand"><img src="jaymate-icon.png" alt="" width="26" height="26">Jaymate</div>
+          <div class="app-nav" aria-hidden="true"><div><span>▦</span> Overview</div><div class="selected"><span>▱</span> Devices</div><div><span>☷</span> Jobs</div><div><span>↻</span> Software Updates</div><div><span>⌑</span> Recovery Lock</div><div><span>≡</span> Failed MDM Commands</div></div>
+          <div class="connection"><span class="status-dot" aria-hidden="true"></span> Connected<small>Demo environment</small></div>
+        </aside>
+        <div class="app-main">
+          <div class="app-toolbar"><strong>Devices</strong><span class="search-preview">⌕ &nbsp; Search devices</span><span aria-hidden="true">↻</span></div>
+          <div class="app-filters"><span>Model <b>All models ⌄</b></span><span>Recovery Lock <b>All status ⌄</b></span></div>
+          <p class="app-loaded">Last loaded: today, 09:41</p>
+          <div class="device-layout">
+            <div class="table-area"><table><caption class="sr-only">Fictional managed Macs</caption><thead><tr><th>Name</th><th>Model</th><th>Chip</th><th>Recovery Lock</th></tr></thead><tbody>
+              <tr class="selected-row"><td>Studio MacBook</td><td>MacBook Pro</td><td>M3 Pro</td><td><span class="lock-status">Enabled</span></td></tr>
+              <tr><td>Design MacBook</td><td>MacBook Air</td><td>M2</td><td><span class="lock-status">Enabled</span></td></tr>
+              <tr><td>Meeting Room</td><td>Mac mini</td><td>M2</td><td><span class="lock-status">Enabled</span></td></tr>
+              <tr><td>Research MacBook</td><td>MacBook Pro</td><td>M3</td><td><span class="lock-status">Enabled</span></td></tr>
+              <tr><td>Welcome Desk</td><td>iMac</td><td>M3</td><td>Disabled</td></tr>
+              <tr><td>Lab Mac</td><td>Mac Studio</td><td>M2 Max</td><td><span class="lock-status">Enabled</span></td></tr>
+            </tbody></table></div>
+            <aside class="device-inspector"><div class="laptop" aria-hidden="true"><div></div><i></i></div><strong>Studio MacBook</strong><p>MacBook Pro</p><dl><div><dt>Chip</dt><dd>M3 Pro</dd></div><div><dt>macOS</dt><dd>15.0</dd></div><div><dt>Recovery Lock</dt><dd class="positive">Enabled</dd></div></dl><p class="inspector-note">Inventory reflects the last reported device state.</p></aside>
+          </div>
+          <div class="app-bottom"><span>6 devices · 1 selected</span><span class="action-preview">Actions ⌄</span></div>
+        </div>
+      </div>
+      <figcaption>Devices, details, and actions in one place. <span>Illustrative preview · sample data</span></figcaption>
+    </figure>
+  </section>
+  <div class="platform-strip wrap"><span>Built with SwiftUI</span><span>Native to macOS</span><span>Light &amp; dark appearance</span><span>Connects directly to Jamf Pro</span></div>
+  <section class="section wrap" id="features" aria-labelledby="features-title">
+    <div class="section-heading"><p class="eyebrow">A CLEARER WORKDAY</p><h2 id="features-title">Less searching.<br>More understanding.</h2><p>Bring the details you need into focus, from a fleet-wide view to the command behind a single device issue.</p></div>
+    <div class="features-grid">
+      <article class="feature-card"><div class="feature-visual inventory-visual" aria-hidden="true"><div class="mini-laptop"></div><div class="mini-laptop"></div><div class="mini-laptop"></div><div class="orbit-dot"></div></div><span class="feature-number">01 / INVENTORY</span><h3>Know your fleet.</h3><p>Browse your managed Macs, filter by model or Recovery Lock status, and open the details without losing your place.</p><div class="feature-tags"><span>Fleet overview</span><span>Device inspector</span></div></article>
+      <article class="feature-card"><div class="feature-visual status-visual" aria-hidden="true"><div><span class="dot green"></span>Completed<span>✓</span></div><div><span class="dot orange"></span>In progress<span>↻</span></div><div><span class="dot red"></span>Needs attention<span>!</span></div></div><span class="feature-number">02 / DIAGNOSTICS</span><h3>Make sense of the status.</h3><p>Investigate update plans and failed MDM commands, read the available events, and export diagnostics for a closer look.</p><div class="feature-tags"><span>Update plans</span><span>JSON exports</span></div></article>
+      <article class="feature-card"><div class="feature-visual action-visual" aria-hidden="true"><div class="check-ring">✓</div><span>Review. Confirm. Follow up.</span></div><span class="feature-number">03 / ACTIONS</span><h3>Take the next step.</h3><p>Manage Recovery Lock and review eligible devices before batch actions. Follow submitted commands in your local job history.</p><div class="feature-tags"><span>Recovery Lock</span><span>Batch history</span></div></article>
+    </div>
+  </section>
+  <section class="care-section" aria-labelledby="care-title"><div class="wrap care-grid"><div><p class="eyebrow">BUILT WITH CARE</p><h2 id="care-title">A good mate<br>keeps you informed.</h2><p>Admin work has real consequences. Jaymate makes room for the details that matter before and after an action.</p></div><div class="care-list"><article><span aria-hidden="true">01</span><div><h3>Review before you send.</h3><p>See which Macs are eligible, which are excluded, and what an action will change.</p></div></article><article><span aria-hidden="true">02</span><div><h3>Accepted isn’t completed.</h3><p>Command submission and device execution are shown as distinct states. Uncertain results stay visible.</p></div></article><article><span aria-hidden="true">03</span><div><h3>Your credentials stay out of the archive.</h3><p>Passwords and tokens aren’t saved in job history or diagnostic exports. Requests go directly to your Jamf Pro instance.</p></div></article></div></div></section>
+  <section class="section wrap get-started" id="get-started" aria-labelledby="start-title"><div class="section-heading"><p class="eyebrow">HELLO, JAYMATE</p><h2 id="start-title">Your fleet’s next companion.</h2><p>Jaymate is a free project in development. This website is public; the app source and an installer are not publicly available yet. The app requires macOS 15 or later and a Jamf Pro account with the appropriate API permissions.</p></div><div class="steps"><article><span>1</span><h3>Follow the project.</h3><p>Watch the website repository for updates. Public download and installation details will be added when available.</p></article><article><span>2</span><h3>Once available, connect.</h3><p>Save your Jamf Pro base URL in Settings. Sign in with an API-enabled account; SSO isn’t supported.</p></article><article><span>3</span><h3>Get to know your fleet.</h3><p>Explore the inventory, inspect update status, and review devices before taking action.</p></article></div><div class="start-actions"><a class="button primary" href="https://github.com/phillscholl/jaymate-website">Follow on GitHub <span aria-hidden="true">↗</span></a></div></section>
+  <section class="wrap faq-section" aria-labelledby="faq-title"><h2 id="faq-title">A few things to know.</h2><div class="faq"><details><summary>Does Jaymate replace Jamf Pro?</summary><p>No. Jaymate connects to your existing Jamf Pro instance and offers a native interface for selected inventory, diagnostic, and administrative tasks. You still need Jamf Pro and the required permissions.</p></details><details><summary>Is this an official Jamf app?</summary><p>No. Jaymate is an independent project by Philippe Scholl. It is not affiliated with or endorsed by Jamf.</p></details><details><summary>Can Jaymate start software updates?</summary><p>The Software Updates module is read-only. It helps you understand plans, events, and errors; it does not initiate updates.</p></details><details><summary>Can I download Jaymate now?</summary><p>Not yet. Only the website is public at this stage. Download and setup details will appear here when the app is available. You can follow the <a href="https://github.com/phillscholl/jaymate-website">website repository</a> for updates.</p></details></div></section>
+</main>
+<footer class="wrap footer"><div class="footer-top"><a class="brand" href="#"><img src="jaymate-icon.png" alt="" width="30" height="30">Jaymate</a><span>Your Mac fleet manager.</span><a href="https://github.com/phillscholl/jaymate-website">GitHub ↗</a></div><div class="footer-bottom"><p>Made by Philippe Scholl.</p><p>Independently developed. Not affiliated with or endorsed by Jamf.<br>Mac and macOS are trademarks of Apple Inc. Jamf and Jamf Pro are trademarks of Jamf.</p></div></footer>
+</body>
+</html>
