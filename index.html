@@ -31,32 +31,24 @@
     <div class="hero-actions"><a class="button primary" href="https://github.com/phillscholl/jaymate-website">Follow the project <span aria-hidden="true">↗</span></a><a class="button secondary" href="#get-started">Availability <span aria-hidden="true">↓</span></a></div>
     <p class="hero-meta">Free project <span>·</span> macOS 15+ <span>·</span> English &amp; German</p>
     <figure class="product-figure">
-      <div class="app-window" aria-label="Illustrative Jaymate Devices view with fictional sample data">
+      <div class="app-window dashboard-preview" aria-label="Illustrative Jaymate Overview dashboard with fictional sample data">
         <aside class="app-sidebar">
           <div class="traffic-lights" aria-hidden="true"><i></i><i></i><i></i></div>
-          <div class="sidebar-brand"><img src="jaymate-icon.png" alt="" width="26" height="26">Jaymate</div>
-          <div class="app-nav" aria-hidden="true"><div><span>▦</span> Overview</div><div class="selected"><span>▱</span> Devices</div><div><span>☷</span> Jobs</div><div><span>↻</span> Software Updates</div><div><span>⌑</span> Recovery Lock</div><div><span>≡</span> Failed MDM Commands</div></div>
-          <div class="connection"><span class="status-dot" aria-hidden="true"></span> Connected<small>Demo environment</small></div>
+          <div class="app-nav" aria-hidden="true"><div class="selected"><span>▦</span> Overview</div><div><span>▱</span> Devices</div><div><span>☷</span> Jobs</div><div><span>↻</span> Software Updates</div><div><span><svg class="lock-icon" viewBox="0 0 16 16" aria-hidden="true"><rect x="4" y="7" width="8" height="7" rx="1"/><path d="M5 7V4a3 3 0 0 1 6 0v3"/></svg></span> Recovery Lock</div><div><span>▤</span> Failed MDM Commands</div></div>
+          <div class="connection"><span class="status-dot"></span> Connected<small>Demo environment</small></div>
         </aside>
         <div class="app-main">
-          <div class="app-toolbar"><strong>Devices</strong><span class="search-preview">⌕ &nbsp; Search devices</span><span aria-hidden="true">↻</span></div>
-          <div class="app-filters"><span>Model <b>All models ⌄</b></span><span>Recovery Lock <b>All status ⌄</b></span></div>
-          <p class="app-loaded">Last loaded: today, 09:41</p>
-          <div class="device-layout">
-            <div class="table-area"><table><caption class="sr-only">Fictional managed Macs</caption><thead><tr><th>Name</th><th>Model</th><th>Chip</th><th>Recovery Lock</th></tr></thead><tbody>
-              <tr class="selected-row"><td>Studio MacBook</td><td>MacBook Pro</td><td>M3 Pro</td><td><span class="lock-status">Enabled</span></td></tr>
-              <tr><td>Design MacBook</td><td>MacBook Air</td><td>M2</td><td><span class="lock-status">Enabled</span></td></tr>
-              <tr><td>Meeting Room</td><td>Mac mini</td><td>M2</td><td><span class="lock-status">Enabled</span></td></tr>
-              <tr><td>Research MacBook</td><td>MacBook Pro</td><td>M3</td><td><span class="lock-status">Enabled</span></td></tr>
-              <tr><td>Welcome Desk</td><td>iMac</td><td>M3</td><td>Disabled</td></tr>
-              <tr><td>Lab Mac</td><td>Mac Studio</td><td>M2 Max</td><td><span class="lock-status">Enabled</span></td></tr>
-            </tbody></table></div>
-            <aside class="device-inspector"><div class="laptop" aria-hidden="true"><div></div><i></i></div><strong>Studio MacBook</strong><p>MacBook Pro</p><dl><div><dt>Chip</dt><dd>M3 Pro</dd></div><div><dt>macOS</dt><dd>15.0</dd></div><div><dt>Recovery Lock</dt><dd class="positive">Enabled</dd></div></dl><p class="inspector-note">Inventory reflects the last reported device state.</p></aside>
+          <div class="app-toolbar"><strong>Overview</strong><span class="preview-refresh" aria-hidden="true">↻</span></div>
+          <div class="dashboard-content">
+            <h2>Your Mac fleet</h2><p class="dashboard-subtitle">Inventory, security, and hardware at a glance.</p><p class="dashboard-loaded">Last loaded: Today, 14:17</p>
+            <div class="fleet-metrics"><div class="fleet-metric blue"><span>▱ &nbsp; Managed Macs</span><strong>102</strong></div><div class="fleet-metric green"><span><svg class="lock-icon" viewBox="0 0 16 16" aria-hidden="true"><rect x="4" y="7" width="8" height="7" rx="1"/><path d="M5 7V4a3 3 0 0 1 6 0v3"/></svg> &nbsp; Recovery Lock enabled</span><strong>76</strong></div><div class="fleet-metric orange"><span><svg class="lock-icon" viewBox="0 0 16 16" aria-hidden="true"><rect x="4" y="7" width="8" height="7" rx="1"/><path d="M5 7V4a3 3 0 0 1 6 0v3"/></svg> &nbsp; Recovery Lock disabled</span><strong>26</strong></div><div class="fleet-metric gray"><span>ⓘ &nbsp; Recovery Lock unknown</span><strong>0</strong></div></div>
+            <h3>Needs attention</h3><div class="attention-grid"><div class="dashboard-card attention-card"><strong><i>!</i>Software Updates</strong><b>10</b><span>Macs need attention</span><small>58 in progress · 19 completed</small><span class="preview-button">View software updates</span><small class="timestamp">Last loaded: Today, 14:17</small></div><div class="dashboard-card attention-card"><strong><i>!</i>Failed MDM Commands</strong><b>13</b><span>Macs affected</span><small>13 failed commands</small><span class="preview-button">Review commands</span><small class="timestamp">Last loaded: Today, 14:17</small></div></div>
+            <h3>macOS distribution</h3><div class="dashboard-card distribution-card"><div class="os-row"><div><span>macOS 27</span><span>32 Macs <em>31%</em></span></div><div class="os-track"><span style="width:31%"></span></div></div><div class="os-row"><div><span>macOS 26</span><span>60 Macs <em>59%</em></span></div><div class="os-track"><span style="width:59%"></span></div></div><div class="os-row"><div><span>macOS 15</span><span>10 Macs <em>10%</em></span></div><div class="os-track"><span style="width:10%"></span></div></div><small>Based on loaded inventory, not update compliance.</small></div>
+            <div class="model-heading"><h3>By model</h3><span class="preview-button">Collapse models</span></div><div class="model-grid"><div class="dashboard-card model-card"><span class="device-symbol laptop-symbol" aria-hidden="true"></span><div><strong>MacBook Air</strong><b>28</b></div></div><div class="dashboard-card model-card"><span class="device-symbol laptop-symbol" aria-hidden="true"></span><div><strong>MacBook Pro</strong><b>60</b></div></div><div class="dashboard-card model-card"><span class="device-symbol desktop-symbol" aria-hidden="true"></span><div><strong>iMac</strong><b>8</b></div></div><div class="dashboard-card model-card"><span class="device-symbol box-symbol" aria-hidden="true"></span><div><strong>Mac mini</strong><b>4</b></div></div><div class="dashboard-card model-card"><span class="device-symbol box-symbol" aria-hidden="true"></span><div><strong>Mac Studio</strong><b>2</b></div></div></div>
           </div>
-          <div class="app-bottom"><span>6 devices · 1 selected</span><span class="action-preview">Actions ⌄</span></div>
         </div>
       </div>
-      <figcaption>Devices, details, and actions in one place. <span>Illustrative preview · sample data</span></figcaption>
+      <figcaption>Your fleet, updates, and diagnostics at a glance. <span>Illustrative preview · sample data</span></figcaption>
     </figure>
   </section>
   <div class="platform-strip wrap"><span>Built with SwiftUI</span><span>Native to macOS</span><span>Light &amp; dark appearance</span><span>Connects directly to Jamf Pro</span></div>
