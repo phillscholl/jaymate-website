@@ -16,3 +16,51 @@
 .lock-icon{display:inline-block;width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:1.2;vertical-align:-2px}
 
 .dashboard-preview .connection{margin-top:auto}
+
+/* Match the native light appearance and the website theme switch. */
+@media(prefers-color-scheme:light){
+:root:not([data-theme=dark]) .dashboard-preview{background:#fff;color:#292929;border-color:#dedede}
+:root:not([data-theme=dark]) .dashboard-preview .app-sidebar{background:#ededed;border-color:#e5e5e5}
+:root:not([data-theme=dark]) .dashboard-preview .app-nav>div{color:#171717}
+:root:not([data-theme=dark]) .dashboard-preview .app-nav .selected{background:#d8d8d8;color:#111}
+:root:not([data-theme=dark]) .dashboard-preview .app-nav .selected span{color:#007aff}
+:root:not([data-theme=dark]) .dashboard-preview .connection{border-color:#d5d5d5;color:#24b847}
+:root:not([data-theme=dark]) .dashboard-preview .connection small,:root:not([data-theme=dark]) .dashboard-subtitle,:root:not([data-theme=dark]) .dashboard-loaded,:root:not([data-theme=dark]) .fleet-metric span,:root:not([data-theme=dark]) .dashboard-card small,:root:not([data-theme=dark]) .os-row em{color:#787878}
+:root:not([data-theme=dark]) .preview-refresh{background:#fafafa;border-color:#e5e5e5;color:#292929}
+:root:not([data-theme=dark]) .fleet-metric.blue{background:#eff5ff;color:#007aff}
+:root:not([data-theme=dark]) .fleet-metric.green{background:#f0faf2;color:#28bd4b}
+:root:not([data-theme=dark]) .fleet-metric.orange{background:#fff6ef;color:#ff8b21}
+:root:not([data-theme=dark]) .fleet-metric.gray{background:#f4f4f4;color:#808080}
+:root:not([data-theme=dark]) .dashboard-card{background:#f9f9f9}
+:root:not([data-theme=dark]) .attention-card i{background:#ff8b21;color:#fff}
+:root:not([data-theme=dark]) .attention-card>b{color:#ff8b21}
+:root:not([data-theme=dark]) .preview-button{background:#e8e8e8;color:#292929}
+:root:not([data-theme=dark]) .os-track{background:#eaeaea}
+:root:not([data-theme=dark]) .os-track span{background:#007aff}
+:root:not([data-theme=dark]) .device-symbol{background:#d9d9d9;border-color:#888}
+:root:not([data-theme=dark]) .laptop-symbol:after,:root:not([data-theme=dark]) .desktop-symbol:after{background:#888}
+:root:not([data-theme=dark]) .box-symbol{background:transparent}
+:root:not([data-theme=dark]) .box-symbol:after{color:#888}
+}
+:root[data-theme=light] .dashboard-preview{background:#fff;color:#292929;border-color:#dedede}
+:root[data-theme=light] .dashboard-preview .app-sidebar{background:#ededed;border-color:#e5e5e5}
+:root[data-theme=light] .dashboard-preview .app-nav>div{color:#171717}
+:root[data-theme=light] .dashboard-preview .app-nav .selected{background:#d8d8d8;color:#111}
+:root[data-theme=light] .dashboard-preview .app-nav .selected span{color:#007aff}
+:root[data-theme=light] .dashboard-preview .connection{border-color:#d5d5d5;color:#24b847}
+:root[data-theme=light] .dashboard-preview .connection small,:root[data-theme=light] .dashboard-subtitle,:root[data-theme=light] .dashboard-loaded,:root[data-theme=light] .fleet-metric span,:root[data-theme=light] .dashboard-card small,:root[data-theme=light] .os-row em{color:#787878}
+:root[data-theme=light] .preview-refresh{background:#fafafa;border-color:#e5e5e5;color:#292929}
+:root[data-theme=light] .fleet-metric.blue{background:#eff5ff;color:#007aff}
+:root[data-theme=light] .fleet-metric.green{background:#f0faf2;color:#28bd4b}
+:root[data-theme=light] .fleet-metric.orange{background:#fff6ef;color:#ff8b21}
+:root[data-theme=light] .fleet-metric.gray{background:#f4f4f4;color:#808080}
+:root[data-theme=light] .dashboard-card{background:#f9f9f9}
+:root[data-theme=light] .attention-card i{background:#ff8b21;color:#fff}
+:root[data-theme=light] .attention-card>b{color:#ff8b21}
+:root[data-theme=light] .preview-button{background:#e8e8e8;color:#292929}
+:root[data-theme=light] .os-track{background:#eaeaea}
+:root[data-theme=light] .os-track span{background:#007aff}
+:root[data-theme=light] .device-symbol{background:#d9d9d9;border-color:#888}
+:root[data-theme=light] .laptop-symbol:after,:root[data-theme=light] .desktop-symbol:after{background:#888}
+:root[data-theme=light] .box-symbol{background:transparent}
+:root[data-theme=light] .box-symbol:after{color:#888}
